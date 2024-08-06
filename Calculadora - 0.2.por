@@ -58,7 +58,10 @@ programa
 	{
 		para(inteiro i = y; i < T.numero_caracteres(x); i++)
 		{
-			se((T.obter_caracter(x, i) == tt.cadeia_para_caracter("+")) ou (T.obter_caracter(x, i) == tt.cadeia_para_caracter("-")))
+			se((T.obter_caracter(x, i) == tt.cadeia_para_caracter("+")) ou 
+			(T.obter_caracter(x, i) == tt.cadeia_para_caracter("-")) ou
+			(T.obter_caracter(x, i) == tt.cadeia_para_caracter("/")) ou
+			(T.obter_caracter(x, i) == tt.cadeia_para_caracter("*")))
 			{
 				i = T.numero_caracteres(x)
 			}
